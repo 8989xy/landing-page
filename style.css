@@ -1,0 +1,197 @@
+/*'rem' is root em, represents the font size of the html element. 16px on most browsers
+used in here for more responsiveness but I might be getting carried away. 
+Will be larger if people are using a larger font size, don't use it on borders those need to be in pixels.
+Also if you want to avoid a website looking bad colorwise just go on coolors
+The 'root' here is so that you can change all colors at once just by swapping the value of the variable used */
+
+:root {
+  --color1: #519872;
+  --color2: #A4B494;
+  --color3: #BEC5AD;
+}
+
+body {
+  height: 100vh;
+  width: 100vw;
+  margin: 0rem auto;
+  overflow: auto;
+  font-family: Roboto, sans-serif;
+}
+ul {
+  list-style-type: none;
+  
+}
+a {
+  text-decoration: none;
+  color: white;
+}
+img {
+  max-height: 100%;
+  max-width: 100%;
+  border: medium inset #f49097;
+}
+
+button {
+  max-width: 100%;
+  max-height: 100%;
+   border: none;
+}
+button:hover {
+  transition: ease 0.1s;
+  transform: scale(1.05);
+}
+
+/* links + body + img info + any global variables or properties shared by multiple things ^ */
+
+nav {
+  background-color: var(--color1);
+  opacity: 0.8;
+  box-shadow: 0 0.5rem 1rem #00000c;
+  backdrop-filter: blur(8px);
+  display: flex;
+  justify-content: space-between;
+  position: sticky;
+  top: 0;
+}
+.headerlogo{
+  display: flex;
+  align-items: center;
+}
+.headerorchid {
+  width: 2.5rem;
+  border-radius: 0.75rem;
+}
+.right-links {
+  display: flex;
+  align-items: center;
+  gap: 1rem;
+  padding: 1rem;
+}
+
+/* header ^ */
+
+.section1 {
+  display: flex;
+  align-items: center;
+  padding: 2rem;
+  gap: 1rem;  
+  background-color: var(--color2);
+}
+.maintitle {
+  display: flex;
+  justify-content: center;
+  font-size: 2rem;
+  font-weight: 900;
+  padding: 2rem;
+}
+.buyorchid {
+display: flex;
+  font-size: 1.5rem;
+  padding: 2rem;
+}
+
+.largeorchid {
+  width: 35rem;
+  border-radius: 0.5rem;
+}
+.topbutton {
+  padding: 1rem;
+  background-color: #34252F;
+text-align: center;
+width: 12rem;
+height: 5rem;
+border-radius: 3rem;
+font-size: 1.5rem;
+}
+.topbuttoncontainer {
+  display: flex;
+  justify-content: center;
+}
+
+/* Section 1 ^ */ 
+
+.orchidtypes {
+  background-color: var(--color1);
+}
+
+.orchidtypestitle {
+  background-color: var(--color3);
+  display: flex;
+  justify-content: center;
+  font-size: 2rem;
+  font-weight: 900;
+  padding: 2rem;
+}
+.orchidtypesbody {
+  display: flex;
+  align-items: center;
+  padding: 2rem;
+  gap: 1rem; 
+}
+
+.smalltext {
+  opacity: 0;
+}
+.smalltext:hover {
+  opacity: 100;
+  transition: ease 0.1s;
+}
+.smallorchid {
+  width: 13rem;
+  border-radius: 0.5rem;
+  transition: ease 0.1s;
+}
+
+.smallorchid:hover {
+  transform: scale(1.05);
+}
+/* Section 2 ^ */ 
+.quote {
+  display: flex;
+  background-color: var(--color3);
+  padding: 2rem;
+  gap: 1rem;  
+}
+
+.mainquote {
+  font-size: 2rem;
+  font-style: italic;
+}
+.quotesource {
+  text-align: right;
+  padding: 3rem;
+  gap: 1rem; 
+  font-size: 1rem;
+  font-weight: 900;
+}
+/* Section 3 ^ */ 
+
+.orchidcare {
+ display: flex;
+  justify-content: center;
+  padding: 2rem;
+  gap: 2rem;  
+}
+.orchidcareframe {
+  background-color: var(--color1);
+  display: flex;
+  align-items: center;
+  padding: 2rem;
+  gap: 1rem;  
+  border-radius: 0.5rem;
+}
+.bottombutton {
+  padding: 0.5rem 1rem;
+  border-radius: 0.75rem;
+  font-size: 1rem;
+  background-color: #3b5249;
+}
+/* Section 4 ^ */ 
+.footer {
+  padding: 1rem;
+  gap: 1rem;  
+   display: flex;
+  justify-content: center;
+  background-color: var(--color1);
+}
+/* Footer ^ */ 
